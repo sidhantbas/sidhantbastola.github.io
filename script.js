@@ -21,7 +21,12 @@ themeToggle.addEventListener('click', () => {
 });
 
 function updateThemeIcon(theme) {
-    themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    if (theme === 'dark') {
+        themeIcon.setAttribute('data-feather', 'sun');
+    } else {
+        themeIcon.setAttribute('data-feather', 'moon');
+    }
+    feather.replace();
 }
 
 // ===================================
@@ -212,14 +217,14 @@ if (heroImage) {
 // ===================================
 
 console.log(`
-%c👋 Hey there!
+%cHey there!
 %cLooks like you're checking out the code. I like your style!
 %cInterested in how this was built? Let's connect!
 
-📧 Email: your.email@example.com
-💻 GitHub: github.com/sidhantbas
+Email: your.email@example.com
+GitHub: github.com/sidhantbas
 `, 
-'font-size: 20px; font-weight: bold; color: #00d4ff;',
-'font-size: 14px; color: #a0a0a0;',
-'font-size: 12px; color: #707070; font-style: italic;'
+'font-size: 20px; font-weight: bold; color: #3b82f6;',
+'font-size: 14px; color: #9ca3af;',
+'font-size: 12px; color: #6b7280; font-style: italic;'
 );

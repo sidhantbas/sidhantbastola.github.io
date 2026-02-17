@@ -6,14 +6,15 @@
     <title>Sidhant Bastola | Applied ML Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-brand">SB</div>
+            <div class="nav-brand">Sidhant Bastola</div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -21,9 +22,9 @@
                 <li><a href="#publications" class="nav-link">Publications</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="theme-toggle" id="themeToggle">
-                <span class="theme-icon">☀️</span>
-            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i data-feather="sun" class="theme-icon"></i>
+            </button>
         </div>
     </nav>
 
@@ -31,16 +32,15 @@
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-label">Applied ML Engineer</div>
+                <div class="hero-label">Machine Learning Engineer</div>
                 <h1 class="hero-title">Sidhant Bastola</h1>
                 <p class="hero-subtitle">
                     Building intelligent systems that bridge the gap between cutting-edge research and real-world impact. 
-                    Specializing in <span class="highlight">Computer Vision</span>, <span class="highlight">Applied Machine Learning</span>, 
-                    and <span class="highlight">AI for Social Good</span>.
+                    Specializing in Computer Vision, Applied Machine Learning, and AI for Social Good.
                 </p>
                 <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    <a href="#projects" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -76,22 +76,22 @@
                     <h3 class="skills-title">Core Expertise</h3>
                     <div class="skills-grid">
                         <div class="skill-item">
-                            <div class="skill-icon">🧠</div>
+                            <i data-feather="cpu" class="skill-icon"></i>
                             <div class="skill-name">Machine Learning</div>
                             <div class="skill-desc">Deep Learning, Computer Vision, NLP</div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-icon">💻</div>
+                            <i data-feather="code" class="skill-icon"></i>
                             <div class="skill-name">Engineering</div>
                             <div class="skill-desc">Python, PyTorch, TensorFlow, MLOps</div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-icon">🚀</div>
+                            <i data-feather="server" class="skill-icon"></i>
                             <div class="skill-name">Deployment</div>
                             <div class="skill-desc">Production ML, System Design, APIs</div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-icon">🌍</div>
+                            <i data-feather="globe" class="skill-icon"></i>
                             <div class="skill-name">Impact</div>
                             <div class="skill-desc">Social Good, Emerging Markets, Startups</div>
                         </div>
@@ -108,7 +108,7 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-icon">🎯</div>
+                        <i data-feather="target" class="project-icon"></i>
                         <div class="project-status">In Progress</div>
                     </div>
                     <h3 class="project-title">Agricultural AI System</h3>
@@ -125,7 +125,7 @@
 
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-icon">📊</div>
+                        <i data-feather="activity" class="project-icon"></i>
                         <div class="project-status">Completed</div>
                     </div>
                     <h3 class="project-title">Real-time Object Detection Pipeline</h3>
@@ -142,7 +142,7 @@
 
                 <div class="project-card">
                     <div class="project-header">
-                        <div class="project-icon">🔬</div>
+                        <i data-feather="layers" class="project-icon"></i>
                         <div class="project-status">Research</div>
                     </div>
                     <h3 class="project-title">Low-Resource NLP for Nepali</h3>
@@ -226,19 +226,19 @@
                 </p>
                 <div class="contact-links">
                     <a href="mailto:your.email@example.com" class="contact-link">
-                        <span class="contact-icon">📧</span>
+                        <i data-feather="mail" class="contact-icon"></i>
                         <span>Email</span>
                     </a>
                     <a href="https://github.com/sidhantbas" class="contact-link" target="_blank">
-                        <span class="contact-icon">💻</span>
+                        <i data-feather="github" class="contact-icon"></i>
                         <span>GitHub</span>
                     </a>
                     <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">
-                        <span class="contact-icon">💼</span>
+                        <i data-feather="linkedin" class="contact-icon"></i>
                         <span>LinkedIn</span>
                     </a>
                     <a href="https://twitter.com/yourhandle" class="contact-link" target="_blank">
-                        <span class="contact-icon">🐦</span>
+                        <i data-feather="twitter" class="contact-icon"></i>
                         <span>Twitter</span>
                     </a>
                 </div>
@@ -254,5 +254,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>
