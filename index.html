@@ -2,49 +2,257 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sidhant Bastola | Vision Builder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidhant Bastola | Applied ML Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">SB</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <span class="theme-icon">☀️</span>
+            </div>
+        </div>
+    </nav>
 
-    <section class="hero">
-        <h1>Sidhant Bastola</h1>
-        <p class="tagline">Building AI. Building Systems. Building Nepal.</p>
-        <button onclick="scrollToSection()">Explore My Vision</button>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-label">Applied ML Engineer</div>
+                <h1 class="hero-title">Sidhant Bastola</h1>
+                <p class="hero-subtitle">
+                    Building intelligent systems that bridge the gap between cutting-edge research and real-world impact. 
+                    Specializing in <span class="highlight">Computer Vision</span>, <span class="highlight">Applied Machine Learning</span>, 
+                    and <span class="highlight">AI for Social Good</span>.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <div class="image-gradient"></div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="about" id="about">
-        <h2>Who I Am</h2>
-        <p>
-            I am a system thinker, AI enthusiast, and future nation builder.
-            My mission is to create breakthroughs in Applied Machine Learning
-            that solve real-world problems — not just research papers.
-        </p>
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        I am a system thinker and AI practitioner focused on creating technology 
+                        that makes a tangible difference in people's lives.
+                    </p>
+                    <p>
+                        My work sits at the intersection of machine learning research and practical 
+                        deployment. I believe that the most impactful AI solutions emerge from a deep 
+                        understanding of both technical fundamentals and real-world constraints.
+                    </p>
+                    <p>
+                        Currently focusing on applied machine learning projects in computer vision, 
+                        particularly in domains where AI can accelerate progress in developing regions 
+                        and underserved communities.
+                    </p>
+                </div>
+                <div class="about-skills">
+                    <h3 class="skills-title">Core Expertise</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">🧠</div>
+                            <div class="skill-name">Machine Learning</div>
+                            <div class="skill-desc">Deep Learning, Computer Vision, NLP</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">💻</div>
+                            <div class="skill-name">Engineering</div>
+                            <div class="skill-desc">Python, PyTorch, TensorFlow, MLOps</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🚀</div>
+                            <div class="skill-name">Deployment</div>
+                            <div class="skill-desc">Production ML, System Design, APIs</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🌍</div>
+                            <div class="skill-name">Impact</div>
+                            <div class="skill-desc">Social Good, Emerging Markets, Startups</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="mission">
-        <h2>My Mission</h2>
-        <p>
-            To build impactful technology that elevates developing nations,
-            empower industries through AI, and create solutions that matter.
-        </p>
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🎯</div>
+                        <div class="project-status">In Progress</div>
+                    </div>
+                    <h3 class="project-title">Agricultural AI System</h3>
+                    <p class="project-description">
+                        Computer vision system for crop disease detection and yield prediction, 
+                        designed for low-resource agricultural settings in Nepal.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Mobile Deployment</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                        <div class="project-status">Completed</div>
+                    </div>
+                    <h3 class="project-title">Real-time Object Detection Pipeline</h3>
+                    <p class="project-description">
+                        End-to-end ML pipeline for real-time object detection with custom model 
+                        optimization and edge deployment capabilities.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">YOLO</span>
+                        <span class="tag">TensorRT</span>
+                        <span class="tag">Edge AI</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🔬</div>
+                        <div class="project-status">Research</div>
+                    </div>
+                    <h3 class="project-title">Low-Resource NLP for Nepali</h3>
+                    <p class="project-description">
+                        Developing language models and NLP tools for Nepali language with focus 
+                        on low-resource transfer learning approaches.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">Transformers</span>
+                        <span class="tag">Transfer Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="projects">
-        <h2>Current Focus</h2>
-        <ul>
-            <li>Applied Machine Learning</li>
-            <li>Computer Vision</li>
-            <li>Startup Systems</li>
-            <li>AI for Social Change</li>
-        </ul>
+    <!-- News/Updates Section -->
+    <section class="section news-section">
+        <div class="container">
+            <h2 class="section-title">Recent Updates</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Feb 2026</div>
+                    <div class="timeline-content">
+                        <h4>Started Applied ML Research Project</h4>
+                        <p>Initiating research on efficient computer vision models for deployment in resource-constrained environments.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2026</div>
+                    <div class="timeline-content">
+                        <h4>Workshop on AI for Social Impact</h4>
+                        <p>Conducting workshops on practical AI applications for local NGOs and social enterprises.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Dec 2025</div>
+                    <div class="timeline-content">
+                        <h4>Launched Portfolio Website</h4>
+                        <p>Built and deployed personal portfolio showcasing projects and research interests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2026 Sidhant Bastola | Built with Vision</p>
+    <!-- Publications Section -->
+    <section class="section publications-section" id="publications">
+        <div class="container">
+            <h2 class="section-title">Publications & Writing</h2>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <div class="pub-year">2026</div>
+                    <div class="pub-content">
+                        <h4 class="pub-title">Efficient Computer Vision for Edge Devices</h4>
+                        <p class="pub-authors">S. Bastola et al.</p>
+                        <p class="pub-venue">In Preparation</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h4 class="pub-title">Applied ML Best Practices for Startups</h4>
+                        <p class="pub-authors">S. Bastola</p>
+                        <p class="pub-venue">Technical Blog Series</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="contact-subtitle">
+                    Interested in collaboration, discussing ideas, or just want to chat about AI and technology? 
+                    I'd love to hear from you.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="contact-link">
+                        <span class="contact-icon">📧</span>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://github.com/sidhantbas" class="contact-link" target="_blank">
+                        <span class="contact-icon">💻</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">
+                        <span class="contact-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://twitter.com/yourhandle" class="contact-link" target="_blank">
+                        <span class="contact-icon">🐦</span>
+                        <span>Twitter</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sidhant Bastola. Building the future, one model at a time.</p>
+        </div>
     </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
